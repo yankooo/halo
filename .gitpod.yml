@@ -1,0 +1,14 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: ./mvnw install -DskipTests
+  - command: ./mvnw test
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
+    - vscjava.vscode-maven
+    - richardwillis.vscode-gradle
+    - eamodio.gitlens
+    - ms-azuretools.vscode-docker
